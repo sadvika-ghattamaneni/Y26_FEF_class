@@ -1,0 +1,165 @@
+
+/*UNIVERSAL SELECTOR*/
+
+*{
+    margin : 0;
+    padding :0;
+    box-sizing: 0;
+}
+
+/*GENERAL BODY STYLE*/
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    padding :20px;
+    background-color: rgb(209, 235, 235);
+}
+
+/*ELEMENT SELECTOR*/
+
+h1{
+    background-color: rgb(184, 225, 211);
+    color:rgb(33, 33, 177);
+    text-align: center;
+}
+
+/*ID SELECTOR*/
+#abcd{
+    color: rgb(159, 23, 159);
+}
+
+/*CLASS SELECTOR*/
+.demo{
+    background-color: rgb(182, 148, 213);
+    color: yellow;
+}
+.demo1 {
+background-color: chartreuse;
+}
+/*GROUPING SELECTOR*/
+h3,p{
+    background-color: crimson;
+    color:rgb(32, 107, 130)
+}
+/*DESCENDANT SELECTOR*/
+
+.container p{
+    background-color: rgb(118, 110, 174);
+    color :rgb(56, 1, 30);
+}
+/*CHILD SELECTOR*/
+
+.container > P{
+    background-color: rgb(8, 121, 169);
+    color : yellow;
+}
+/* ADJACENT SIBLING SELECTOR*/
+h4+p{
+   
+    color: turquoise;
+}
+/*  SIBLING SELECTOR*/
+h4~p{
+    background: rgb(172, 69, 172);
+    
+}
+/*ATRIBUTE SELECTOR*/
+input[type="text"] {
+    background-color: lightyellow;
+}
+
+input[type="password"] {
+    background-color: lightblue;
+}
+
+input[type="email"] {
+    background-color: lightgreen;
+}
+/* PSEUDO-CLASS SELECTORS */
+button:hover {
+    background-color: rgb(16, 108, 3);
+    color: white;
+}
+
+button:active {
+    background-color: rgb(81, 2, 2);
+}
+
+
+input:focus {
+    outline: 2px solid rgb(196, 12, 171);
+    background-color: lightyellow;
+}
+
+
+li:first-child {
+    color: rgb(3, 86, 119);
+    font-weight: bold;
+}
+
+
+li:last-child {
+    color: rgb(10, 10, 101);
+    font-weight: bold;
+}
+
+
+li:nth-child(2) {
+    background-color: lightgreen;
+}
+
+
+input:checked {
+    accent-color: green;
+}
+
+
+input:disabled {
+    background-color: rgb(82, 79, 79);
+    color: white;
+}
+
+input:not([type="checkbox"]) {
+    border-radius: 4px;
+}
+.pseudo::first-letter {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+}
+/* ::first-line
+   Styles the first line of paragraph */
+.pseudo::first-line {
+    color: blue;
+}
+
+/* ::before
+   Inserts content before heading content */
+.after::before {
+    content: "★ ";
+    color: orange;
+}
+
+/* ::after
+   Inserts content after heading content */
+.after::after {
+    content: "!";
+    color: red;
+}
+
+/* ::selection
+   Styles text selected by the user */
+::selection {
+    background-color: yellow;
+    color: red;
+}
+
+p{
+    color:blue;
+    }
+.text{
+        color:red;
+    }
+    #para{
+        color:aqua;
+    }
