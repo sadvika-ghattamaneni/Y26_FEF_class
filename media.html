@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    
+</head>
+<body>
+    <audio controls loop>
+        <source src="/file_example_MP3_1MG.mp3" type="audio/mp3">
+    </audio>
+<br>
+<br>
+    <video width="400"
+        controls
+        height="200">
+    <source src="./file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+
+    <track
+    src="english">
+    </video>
+
+
+    <picture>
+    <source media="(max-width:6000px)"
+    srcset="/download.jpeg">
+
+    <source media="(min-width:601px)"
+    srcset="/Google__G__logo.svg.webp">
+
+    <img src="Butterfly.jpg"
+            alt="butterfly"
+            width="400">
+
+</picture>
+</body>
+</html>
